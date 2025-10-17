@@ -6,8 +6,8 @@ import { addItem } from './CartSlice';
 
 function ProductList() {
     const [showCart, setShowCart] = useState(false);
-    const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
-    const [addedToCart, setAddedToCart] = useState({}); // To track which products are added to cart
+    const [showPlants, setShowPlants] = useState(false); 
+    const [addedToCart, setAddedToCart] = useState({}); 
     const cart = useSelector((state) => state.cart);
     const dispatch = useDispatch();
 
@@ -242,13 +242,13 @@ function ProductList() {
 
     const handleCartClick = (e) => {
         e.preventDefault();
-        setShowCart(true); // Set showCart to true when cart icon is clicked
+        setShowCart(true); 
     };
 
     const handlePlantsClick = (e) => {
         e.preventDefault();
-        setShowPlants(true); // Set showAboutUs to true when "About Us" link is clicked
-        setShowCart(false); // Hide the cart when navigating to About Us
+        setShowPlants(true); 
+        setShowCart(false); 
     };
 
     const handleContinueShopping = (e) => {
